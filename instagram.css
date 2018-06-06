@@ -1,3 +1,4 @@
+
 body {
   font-family: "Helvetica Neue";
   margin-bottom: 100px;
@@ -12,4 +13,20 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px
+}
+
+@media all and (max-width: 1000px)and (orientation: landscape) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    background: lightblue;
+    margin: 20px;
+  }
+  }
+  
+@media all and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    background: grey;
+    margin:20px;
+}
 }
